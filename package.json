@@ -1,0 +1,40 @@
+{
+  "name": "url-format-lax",
+  "version": "0.0.0",
+  "description": "Lax url.format()",
+  "license": "MIT",
+  "repository": "sindresorhus/url-format-lax",
+  "author": {
+    "name": "Sindre Sorhus",
+    "email": "sindresorhus@gmail.com",
+    "url": "sindresorhus.com"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "xo && ava"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "url",
+    "uri",
+    "format",
+    "loose",
+    "lax",
+    "protocol",
+    "less",
+    "protocol-less",
+    "hostname",
+    "host",
+    "ip",
+    "ipv4",
+    "ipv6"
+  ],
+  "devDependencies": {
+    "ava": "*",
+    "xo": "*"
+  }
+}
