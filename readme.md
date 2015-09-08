@@ -1,6 +1,6 @@
 # url-format-lax [![Build Status](https://travis-ci.org/sindresorhus/url-format-lax.svg?branch=master)](https://travis-ci.org/sindresorhus/url-format-lax)
 
-> Lax [`url.format()`](https://nodejs.org/docs/latest/api/url.html#url_url_format_urlobj) that formats a hostname and port into IPv6-compatible socket form of `hostname:port`.
+> Lax [`url.format()`](https://nodejs.org/docs/latest/api/url.html#url_url_format_urlobj) that formats a hostname and port into IPv6-compatible socket form of `hostname:port`
 
 
 ## Install
