@@ -1,8 +1,7 @@
-'use strict';
-var test = require('ava');
-var fn = require('./');
+import test from 'ava';
+import fn from './';
 
-test(function (t) {
+test(t => {
 	t.is(fn({host: 'google.com', port: '123'}), 'google.com:123');
 	t.is(fn({host: 'google.com', port: 123}), 'google.com:123');
 	t.is(fn({host: 'google.com'}), 'google.com');
@@ -10,5 +9,4 @@ test(function (t) {
 	t.is(fn({host: '::'}), '[::]');
 	t.is(fn({protocol: 'https', host: 'google.com'}), 'google.com');
 	t.is(fn({host: 'google.com', pathname: '/path'}), 'google.com');
-	t.end();
 });
