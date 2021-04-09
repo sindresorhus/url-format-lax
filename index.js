@@ -1,14 +1,13 @@
-'use strict';
-var url = require('url');
+import {Url, format as internalFormatUrl} from 'url';
 
-module.exports = function (x) {
-	if (typeof x !== 'object') {
+export default function urlFormat(url) {
+	if (typeof url !== 'object') {
 		throw new TypeError('Expected an object');
 	}
 
-	var u = new url.Url();
-	u.hostname = x.hostname || x.host;
-	u.port = x.port;
+	const newUrl = new Url();
+	newUrl.hostname = url.hostname || url.host;
+	newUrl.port = url.port;
 
-	return url.format(u).replace(/^\/\//, '');
-};
+	return internalFormatUrl(newUrl).replace(/^\/\//, '');
+}
