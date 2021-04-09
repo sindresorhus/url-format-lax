@@ -1,6 +1,6 @@
 {
 	"name": "url-format-lax",
-	"version": "1.0.0",
+	"version": "2.0.0",
 	"description": "Lax `url.format()` that formats a hostname and port into IPv6-compatible socket form of `hostname:port`",
 	"license": "MIT",
 	"repository": "sindresorhus/url-format-lax",
